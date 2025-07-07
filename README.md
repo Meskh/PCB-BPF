@@ -23,7 +23,7 @@ This project implements a band-pass filter with cutoff frequencies of 200 Hz and
 - **Centre-tap virtual ground** using an op-amp buffer  
 - **Full KiCad project** with schematic, PCB, and 3D model  
 - **Enclosure design** for 3D printing in PETG
-- Simulation testing and design details available in the ![report](https://github.com/Meskh/PCB-BPF/blob/main/report.pdf)   
+- Simulation testing and design details available in the [report](https://github.com/Meskh/PCB-BPF/blob/main/report.pdf)   
 
 ---
 
