@@ -1,6 +1,6 @@
 # Band-Pass Filter PCB Design
 
-A KiCad-based PCB design and circuit implementation of a 2nd-order Sallen-Key Butterworth band-pass filter, developed for the EEE1028LDPS Technical Design assignment at the University of Surrey.
+A KiCad-based PCB design and circuit implementation of a 2nd-order Sallen-Key Butterworth band-pass filter, developed as part of the Technical Design module at the University of Surrey.
 
 ---
 
@@ -27,7 +27,7 @@ This project implements a band-pass filter with cutoff frequencies of 200 Hz and
 - A 2nd-order Sallen-Key high-pass stage  
 - Centre-tap virtual ground generation  
 - PCB layout optimized for JLCPCB manufacturing  
-- 3D-printed enclosure design  
+- 3D-printable enclosure design  
 
 ---
 
@@ -37,40 +37,18 @@ This project implements a band-pass filter with cutoff frequencies of 200 Hz and
 - **SMD components** for compact footprint and low parasitics  
 - **Centre-tap virtual ground** using an op-amp buffer  
 - **Full KiCad project** with schematic, PCB, and 3D model  
-- **Enclosure design** for 3D printing in PETG  
+- **Enclosure design** for 3D printing in PETG
+- Simulation testing and design details available in the ![report](./report.pdf)   
 
 ---
 
-## Project Structure
-## Project Structure
-
-    BandPassFilter/
-    ├── schematics/
-    │   ├── conceptual_circuit.kicad_sch
-    │   ├── stage_schematics.kicad_sch
-    │   └── full_filter.kicad_sch
-    ├── pcb/
-    │   ├── bandpass.kicad_pcb
-    │   ├── bandpass_front_copper.png
-    │   ├── bandpass_back_copper.png
-    │   └── bandpass_3d_model.png
-    ├── enclosure/
-    │   ├── enclosure_front.stl
-    │   ├── enclosure_back.stl
-    │   └── enclosure_3d_render.png
-    ├── simulations/
-    │   ├── lpf_response.png
-    │   ├── hpf_response.png
-    │   └── bpf_response.png
-    ├── images/
-    │   ├── conceptual_diagram.png
-    │   ├── centre_tap.png
-    │   └── opamp_pinout.png
-    └── README.md
-
 ## Circuit Design
 
-1. **Conceptual diagram** shows block stages: LPF → buffer → HPF → buffer.  
+1. **Conceptual diagram** shows block stages: LPF → buffer → HPF → buffer.
+   <figure>
+      <img src="pictures/chart.png" width="250px" alt="Conceptual Diagram Preview" />
+      <figcaption>Conceptual block diagram overview</figcaption>
+    </figure>  
 2. **Stage schematics** for 2nd-order Sallen-Key LPF and HPF.  
 3. **Centre-tap circuit** using a voltage divider and op-amp in follower mode.  
 4. **Full BPF schematic** combining all stages with quad-op-amp and virtual ground.
