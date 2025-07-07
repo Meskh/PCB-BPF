@@ -44,14 +44,18 @@ This project implements a band-pass filter with cutoff frequencies of 200 Hz and
 
 ## Circuit Design
 
-1. **Conceptual diagram** shows block stages: LPF → buffer → HPF → buffer.
+1. **Conceptual diagram** shows block stages: LPF → buffer → HPF → buffer.  
    <figure>
-      <img src="./Pictures/Chart.png" width="250px" alt="Conceptual Diagram Preview" />
+      <img src="./Pictures/Chart.png" width="70%" alt="Conceptual Diagram Preview" />
       <figcaption>Conceptual block diagram overview</figcaption>
     </figure>  
 2. **Stage schematics** for 2nd-order Sallen-Key LPF and HPF.  
 3. **Centre-tap circuit** using a voltage divider and op-amp in follower mode.  
 4. **Full BPF schematic** combining all stages with quad-op-amp and virtual ground.
+   <figure>
+      <img src="./Pictures/CircuitSchematic.png" width="70%" alt="Conceptual Diagram Preview" />
+      <figcaption>Conceptual block diagram overview</figcaption>
+    </figure>  
 
 ## PCB Layout
 
